@@ -39,7 +39,7 @@ public class Unit6Test {
     @Test
     public void testCountOccurrences() {
         assertEquals(3, Unit6.countOccurrences(new int[]{1, 2, 3, 1, 4, 1}, 1));  
-        assertEquals(0, Unit6.countOccurrences(new int[]{1, 2, 3, 4, 5}, 6)); 
+        assertEquals(0, Unit6.countOccurrences(new int[]{1, 2, 3, 4, 5}, 6));
         assertEquals(4, Unit6.countOccurrences(new int[]{0, 0, 0, 0}, 0));
     }
 
