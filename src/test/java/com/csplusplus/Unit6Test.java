@@ -8,16 +8,16 @@ public class Unit6Test {
     // 1. Test for sumArray 
     @Test
     public void testSumArray() {
-        assertEquals(0, Unit6.sumArray(new int[]{1, 2, 3, 4, 5}));
+        assertEquals(15, Unit6.sumArray(new int[]{1, 2, 3, 4, 5}));
         assertEquals(0, Unit6.sumArray(new int[]{0, 0, 0, 0, 0}));
-        assertEquals(0, Unit6.sumArray(new int[]{-1, -2, -3, -4, -5}));
+        assertEquals(-15, Unit6.sumArray(new int[]{-1, -2, -3, -4, -5}));
     }
 
     // 2. Test for maxElement 
     @Test
     public void testMaxElement() {
-        assertEquals(0, Unit6.maxElement(new int[]{1, 2, 3, 4, 5}));
-        assertEquals(0, Unit6.maxElement(new int[]{-5, -4, -3, -2, -1}));
+        assertEquals(5, Unit6.maxElement(new int[]{1, 2, 3, 4, 5}));
+        assertEquals(-1, Unit6.maxElement(new int[]{-5, -4, -3, -2, -1}));
     }
 
     // 3. Test for reverseArray 
@@ -31,16 +31,16 @@ public class Unit6Test {
     @Test
     public void testIsSorted() {
         assertTrue(Unit6.isSorted(new int[]{1, 2, 3, 4, 5}));
-        assertTrue(Unit6.isSorted(new int[]{5, 4, 3, 2, 1}));
+        assertFalse(Unit6.isSorted(new int[]{5, 4, 3, 2, 1}));
         assertTrue(Unit6.isSorted(new int[]{})); // Edge case: empty array
     }
 
     // 5. Test for countOccurrences 
     @Test
     public void testCountOccurrences() {
-        assertEquals(0, Unit6.countOccurrences(new int[]{1, 2, 3, 1, 4, 1}, 1));  
+        assertEquals(3, Unit6.countOccurrences(new int[]{1, 2, 3, 1, 4, 1}, 1));  
         assertEquals(0, Unit6.countOccurrences(new int[]{1, 2, 3, 4, 5}, 6));
-        assertEquals(0, Unit6.countOccurrences(new int[]{0, 0, 0, 0}, 0));
+        assertEquals(4, Unit6.countOccurrences(new int[]{0, 0, 0, 0}, 0));
     }
 
 }
