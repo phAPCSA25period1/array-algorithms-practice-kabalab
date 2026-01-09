@@ -48,7 +48,7 @@ public class Unit6 {
     public static int countOccurrences(int[] array, int number) {
         int count = 0;
         for (int num : array) {
-            if (num == number) {
+            if (num != number) {
                 count++;
             }
         }
